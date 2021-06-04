@@ -74,21 +74,7 @@ const validateForm = () => {
     //final check if the validation went through successfully
     if (validationFlag === true) {
         validated.innerHTML = "Success, form has been sent"
-
-        //make formData
-        var formData = new FormData();
-        formData.append("your-name", namefield.value);
-        formData.append("your-email", email.value);
-        formData.append("your-subject", subject.value);
-        formData.append("your-message", messagefield.value);
-
-        //send off data to contact form 7 in wordpress
-        var request = new XMLHttpRequest();
-        request.open("POST", "https://12u.ad6.myftpupload.com/wp-json/contact-form-7/v1/contact-forms/78/feedback");
-        request.send(formData);
     }
-
-
 }
 
 //add eventlistener to the button

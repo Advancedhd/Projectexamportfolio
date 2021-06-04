@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+button.getmore {
+  color: black;
+  height: 50px;
+  width: 100px;
+}
+
 #logo {
   margin-left: 25%;
   height: auto;

@@ -20,6 +20,7 @@ async function getImage(link) {
 }
 
 let aboutmain = document.querySelector(".aboutmain")
+let head = document.querySelector(".head")
 
 getData().then(data => {
         let dest = data
@@ -31,10 +32,13 @@ getData().then(data => {
             let title = dest.title.rendered
             titleCondensed = title.replace("Destination ", "")
 
+            let headTtile = `<title>${title}</title>`
+
             let format = `
             <h1>${title}</h1>
             ${content}
             `
+            head.innerHTML += headTtile
             aboutmain.innerHTML += format
         })
      
