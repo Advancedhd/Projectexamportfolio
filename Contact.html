@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Contact me" content="Contact me page">
+    <meta name="viewport" content="width=width=device-width , initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/698b6da628.js" crossorigin="anonymous"></script>
+    <title>Contact me</title>
+</head>
+<body>
+    <header>
+        <div class="navigationbar">
+            <nav class="nav">
+                <a href="index.html"> <img src="images/travellogo.jpg" id="logo"></a>
+                    <input type="checkbox" id="hamburgermeny">
+                    <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html" class="active">Contact</a></li>
+                    <li><a href="ListOfBlogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    
+    <main>
+        <div class="contactfeedback">
+            <div class="feedback">
+
+                <form class="checkform">
+
+                    <h1 class="feedbacktext"><b>Contact me!</b></h1>
+
+                    <div class="feedbackcontent">
+                        <label for="firstname" class="signuplabel" >Your Name</label>
+                        <input class="NameField" type="text" name="firstname" id="firstname"placeholder="Your name">
+                    </div>
+
+                    <div class="feedbackcontent">
+                        <label for="email"  class="signuplabel">Email Address</label>
+                        <input class="EmailField" type="text" name="email" id="email" placeholder="Your Email">
+                    </div>
+
+                    <div class="feedbackcontent">
+                        <label for="subject">Subject</label>
+                        <input class="SubjectField"id="subject" name="subject" placeholder="Subject"></input>
+                    </div>
+
+                    <div class="feedbackcontent">
+                        <label for="message">Message</label>
+                        <textarea class="messagefield" id="message" name="message" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="msg" style="color: red;"></div>
+                    <div class="validated" style="color: lime;"></div>
+                    <div>
+                        <button class="feedbacksend">Send</button>
+                    </div>
+                </div>
+            </form>
+
+            </div>
+        </div>
+     </main>
+     <footer>
+        
+        <ul class="footer-nav">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html"class="active">Contact</a></li>
+            <li><a href="ListOfBlogs.html">Blogs</a></li>
+        </ul>
+
+    </footer>
+</body>
+<script src="js/validation.js" defer></script>
+<script src="js/main.js" defer></script>
+</html>
