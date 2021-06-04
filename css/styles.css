@@ -10,10 +10,41 @@ button.getmore {
   width: 100px;
 }
 
+.getmorebutton {
+  display: none;
+}
+
+p.has-text-align-center {
+  width: 60% !important;
+  margin-left: 20% !important;
+  text-align: center;
+}
+
+figcaption {
+  width: 60% !important;
+  margin-left: 20% !important;
+  text-align: center;
+}
+
+p.aboutcontent {
+  width: 60% !important;
+  margin-left: 20% !important;
+  text-align: center;
+}
+
 #logo {
   margin-left: 25%;
   height: auto;
   width: 50%;
+}
+#getmore {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: turquoise;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: 30%;
 }
 
 .nav-links,
@@ -454,6 +485,10 @@ main h2 {
     margin-top: 7%;
   }
 
+  #getmore {
+    margin-left: 0%;
+  }
+
   footer {
     height: 350px;
     margin-left: 15%;
@@ -649,7 +684,7 @@ main h2 {
   .pjcontainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 6px;
     grid-row-gap: 6px;
     margin-bottom: 50px;

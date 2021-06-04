@@ -62,6 +62,8 @@ function loadmore() {
                 return
             }
 
+            document.getElementById("getmore").innerHTML = '<div></div>'
+
             container.innerHTML += format;
             moreid++;
         });
