@@ -62,7 +62,7 @@ function loadmore() {
                 return
             }
 
-            document.getElementById("getmore").innerHTML = '<div></div>'
+            document.getElementById("getmore").style.display = "none";
 
             container.innerHTML += format;
             moreid++;
